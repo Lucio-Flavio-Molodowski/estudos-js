@@ -1,0 +1,92 @@
+body {
+  background: url(../images/pagebackground.jpg);	
+}
+
+body h1 {
+  font: 50px arial, sans-serif;
+  width: 400px;
+  text-align: center;
+  margin-left: 470px;
+  background-color: #22222273;
+  border: #22222265 solid 4px;
+  border-radius: 4px;
+}
+
+body .opacity {
+  width: 949px;
+  height: 520px;
+  background-color: #222222;
+  opacity: 0.3;
+  border: 4px solid #000000;
+  border-radius: 4px;
+  margin-top: -250px;
+  margin-left: 195px;
+}
+
+body form {
+  font: 30px arial, sans-serif;
+  line-height: 60px;
+  position: relative;
+  top: 50px;
+  margin-left: 440px;
+  z-index: 99;
+}
+
+body form label input {
+  font: 30px arial, sans-serif;
+  background-color: #22222273;
+  border: #22222265 solid 4px;
+  border-radius: 4px;
+}
+
+body form label #input1 {
+  margin-left: 15px;
+}
+
+body form label #input2 {
+  margin-left: 6px;
+}
+
+body form label #input3	 {
+  margin-left: 4px;
+}
+
+body form label #input4 {
+  margin-left: 10px;
+}
+
+body form button {
+  font: 25px arial, sans-serif;
+  background-color: #FF0000;
+  border: 4px solid #FF0000D4;
+  border-radius: 4px;
+  width: 150px;
+  height: 50px;
+  margin-left: 160px;
+  margin-top: 20px;
+  float: left;
+}
+
+#result {
+  margin-top: -150px;
+  margin-left: 276px;
+  width: 800px;
+  height: 100px;
+  background-color: #22222299;	
+  position: absolute;
+  border: #22222265 solid 4px;
+  border-radius: 4px;
+}
+
+#result label {
+  font: 30px arial, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 10px;
+  display: block;
+}
+
+#result #resultado {
+  padding-left: 50px;
+}

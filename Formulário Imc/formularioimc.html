@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Calculadora Imc</title>
+	<link rel="stylesheet" href="css/cssform.css">
+	<body>
+	    <h1>Calculadora Imc</h1>
+		<form>
+		  <label>Peso<input id="input1" type="text"></label>
+		  <br>
+		  <label>Altura<input id="input2" type="text"></label>
+		  <br>
+		  <label>Nome<input id="input3" type="text"></label>
+		  <br>
+		  <label>Idade<input id="input4" type="text"></label>
+		  <br>
+		  <button onclick="calcularImc()">Calcular</button>
+		</form>
+		<div class="opacity"></div>
+		
+		<div id="result"><label>Resultado = <span id="resultado"></span></label></div>
+	</body>
+	<script>
+	  var peso;
+	  var altura;
+	  var nome;
+	  var idade;
+	  var imc;
+	  var texto;
+	  var alltxt;
+	  
+	  function calcularImc() 
+	  {
+	    event.preventDefault();
+	  
+	    peso = document.getElementById('input1').value;
+	    altura = document.getElementById('input2').value;
+	    nome = document.getElementById('input3').value;
+		idade = document.getElementById('input4').value;
+		imc = peso / (altura * altura);
+	    span = document.getElementById('resultado');
+	  
+	  if (imc < 19){  
+		texto = 'Abaixo do Peso';
+	  }else if (imc <= 25){
+	    texto = 'Normal ';
+	  }else if (imc <= 30){
+	    texto = 'Sobrepeso';
+	  }else if (imc <= 40){
+	    texto = 'Obeso Tipo I';
+	  }else {
+	    texto = 'Obeso Morbido';
+	  }
+		alltxt = nome + ' ' + idade + ' anos ' + texto;
+		span.innerHTML = alltxt;
+	  }
+    </script>
+  </head>
+</html>
